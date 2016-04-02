@@ -2,7 +2,7 @@ import csv
 from flask import Flask
 from flask import abort
 from flask import render_template
-app = Flask(__name__, static_url_path='/first-news-app/repo/static', static_folder='./static')
+app = Flask(__name__, static_url_path='/first-news-app/static', static_folder='./static')
 
 def get_csv():
     csv_path = './static/la-riots-deaths.csv'
